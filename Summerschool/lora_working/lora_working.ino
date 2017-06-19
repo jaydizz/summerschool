@@ -36,6 +36,7 @@
 #define SEALEVELPRESSURE_HPA (1013.25)
 
 
+
 // This EUI must be in little-endian format, so least-significant-byte
 // first. When copying an EUI from ttnctl output, this means to reverse
 // the bytes. For TTN issued EUIs the last bytes should be 0xD5, 0xB3,
@@ -54,7 +55,7 @@ void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
 static const u1_t PROGMEM APPKEY[16] = { 0xAE, 0xB9, 0x57, 0x8C, 0xFD, 0xDA, 0x3F, 0x8F, 0xCE, 0x9E, 0xFD, 0x16, 0x4C, 0xDE, 0x33, 0x7E };
 void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 
-static uint8_t mydata[] = "Hello, world!";
+static uint8_t mydata[] = "0";
 static osjob_t sendjob;
 
 // Schedule TX every this many seconds (might become longer due to duty
@@ -65,7 +66,7 @@ const unsigned TX_INTERVAL = 60;
 const lmic_pinmap lmic_pins = {
     .nss = 8,
     .rxtx = LMIC_UNUSED_PIN,
-    .rst = 4,
+    .rst = LMIC_UNUSED_PIN,
     .dio = {3, 6, LMIC_UNUSED_PIN},
 };
 
@@ -152,6 +153,8 @@ void do_send(osjob_t* j){
 }
 
 void setup() {
+    delay(2000);
+    
     Serial.begin(9600);
     Serial.println(F("Starting"));
 
@@ -166,6 +169,7 @@ void setup() {
     os_init();
     // Reset the MAC state. Session and pending data transfers will be discarded.
     LMIC_reset();
+    LMIC_setClockError(MAX_CLOCK_ERROR * 1 / 100);
 
     // Start job (sending automatically starts OTAA too)
     do_send(&sendjob);
