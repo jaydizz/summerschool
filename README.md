@@ -1,4 +1,5 @@
 # iot
+![Grafana Dashboard](img/screen.jpg)
 
 Repsitory conainting all files neccessary to complete the summerschool at kiz Ulm University.
 The summerschool targets IT-Specialist appretinces at the datacenter of Ulm University. It should always cover subjects that are not covered by the curriculum of the trade school they are going to. So this year we wanted to try something utterly new by introducing them to the big new buzzword of *internet of things*, specifically *LoRaWan* and *TheThingsNetwrk*.
@@ -10,6 +11,13 @@ They had to build a LoRaWan Weatherstation that pushes als measurements to TTN. 
 * BME280 Temperaturesensor (includes humidity + pressure)
 * TEEMT6000 Ambient Light Sensor
 * Soil humidity sendor
+
+## Libraries used
+* Adafruit BME280
+* Adafruit TEEMT6000
+* Sparkfun SoilHumiditySensor
+* LMIC by matthijskooijman (https://github.com/matthijskooijman/arduino-lmic)
+
 
 ## Filestructure
 
