@@ -11,6 +11,13 @@ They had to build a LoRaWan Weatherstation that pushes als measurements to TTN. 
 * TEEMT6000 Ambient Light Sensor
 * Soil humidity sendor
 
+## Libraries used
+* Adafruit BME280
+* Adafruit TEEMT6000
+* Sparkfun SoilHumiditySensor
+* LMIC by matthijskooijman (https://github.com/matthijskooijman/arduino-lmic)
+
+
 ## Filestructure
 
 * *src* - contains the sketchfiles
