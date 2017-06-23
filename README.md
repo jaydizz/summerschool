@@ -4,7 +4,7 @@
 Repsitory conainting all files neccessary to complete the summerschool at kiz Ulm University.
 The summerschool targets IT-Specialist appretinces at the datacenter of Ulm University. It should always cover subjects that are not covered by the curriculum of the trade school they are going to. So this year we wanted to try something utterly new by introducing them to the big new buzzword of *internet of things*, specifically *LoRaWan* and *TheThingsNetwrk*.
 They had to build a LoRaWan Weatherstation that pushes als measurements to TTN. Aferwards these measurements had to be fetched via node-red or a tool of their choice and thereafter visualized via a suitable tool (grafana + influx in this example).
-This project has been conducted under supervision of Simon Lueke of Studierendenwerk Ulm and me.
+This project has been conducted under supervision of Simon Lueke of Studierendenwerk Ulm and me (Johannes Deger).
 
 ## Things needed to recreate this project / Prerequisites
 ### Infrastructure
