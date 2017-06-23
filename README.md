@@ -12,6 +12,7 @@ This project has been conducted under supervision of Simon Lueke of Studierenden
 * BME280 Temperaturesensor (includes humidity + pressure)
 * TEEMT6000 Ambient Light Sensor
 * Soil humidity sendor
+* Server with node-red, influxdb and grafana installed and running (tutorial may follow).
 
 ## Libraries / Tutorials used
 * [Adafruit BME280](https://github.com/adafruit/Adafruit_BME280_Library)
