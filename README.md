@@ -8,7 +8,7 @@ This project has been conducted under supervision of Simon Lueke of Studierenden
 
 ## Things needed to recreate this project / Prerequisites
 ### Infrastructure
-* Server with node-red, influxdb and grafana installed and running (tutorial may follow).
+* Server / Computer connected to the internet with at least 4GB Ram (for Node-Red, InfluxDB and Grafana for visualization). We recommend a blank machine so your students can install everything (including linux) by themselfes.
 * LoRaWan coverage! If not available, you can either buy a gateway (expensive) or [build one yourself](https://github.com/JaapBraam/LoRaWanGateway). 
 ### Modules 
 * Adafruit Feather M0 Lora (RFM95 for eu Frequencies)
