@@ -16,6 +16,7 @@ This project has been conducted under supervision of Simon Lueke of Studierenden
 * BME280 Temperaturesensor (includes humidity + pressure)
 * TEEMT6000 Ambient Light Sensor
 * Soil humidity sendor
+
 ### Electircal components
 * 5 LEDs per Team
 * Some arbitraty NTCs / PTCs ( equal number of both)
@@ -23,6 +24,17 @@ This project has been conducted under supervision of Simon Lueke of Studierenden
   *Important*: Choose carbon composite resistors for the electrotechnics presentation as they are less temperature-stable. This way you can show the temperature dependency of resistors.
 * Some arbitrary resistors, this time metal foil resistors
 * Jumper-Wires (best get them from China via AliExpress)
+* Wire, length 8.26 cm, ~ 50 \Omega as antenna. We used enamelled copper wire with 0.8 diameter as used in transformers and obtained perfectly good results.
+* pinheaders for the sensors
+
+### Tools required
+* A solder station incl. solder (lead free ;) )
+* solder wick in case you make a mistake
+* flux
+* multimeter (2x per team for some experiments)
+* oscilloscope ( not required, but nice-to-have for finding bugs)
+* PC with Matlab is nice to have but not explicitely required.
+* lab power supply ( one per team)
 
 ## Libraries / Tutorials used
 * [Adafruit BME280](https://github.com/adafruit/Adafruit_BME280_Library)
